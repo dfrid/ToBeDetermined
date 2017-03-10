@@ -24,27 +24,27 @@ qsort algo(pivot pos as middle position).
 
 ### Time measurements and analysis of same
 
-n: Array Size        Runtime: Time in nanoseconds
+n: Array Size Runtime: Time in nanoseconds
 
 #### Worst Case:
-* n: 5 Runtime: 
-* n: 100 Runtime: 
-* n: 1000 Runtime: 
-* n: 10000 Runtime: 
-* n: 100000 Runtime: 
+* n: 5 Runtime: 39001
+* n: 100 Runtime: 12252
+* n: 1000 Runtime: 506639
+* n: 10000 Runtime: 50989117
+* n: 100000 Runtime: OVERFLOW
 
 #### Best Case:
-* n: 5 Runtime: 
-* n: 100 Runtime: 
-* n: 1000 Runtime: 
-* n: 10000 Runtime: 
-* n: 100000 Runtime: 
+* n: 5 Runtime: 128
+* n: 100 Runtime: 5794
+* n: 1000 Runtime: 52109
+* n: 10000 Runtime: 205529
+* n: 100000 Runtime: 1551052
 #### Average Case:
-* n: 5 Runtime: 
-* n: 100 Runtime: 
-* n: 1000 Runtime: 
-* n: 10000 Runtime: 
-* n: 100000 Runtime: 
+* n: 5 Runtime: 299
+* n: 100 Runtime: 3793
+* n: 1000 Runtime: 49389
+* n: 10000 Runtime: 624368
+* n: 100000 Runtime: 7667454
 ### How pivot selection and data arrangement affect execution time
 Pivot Position and array arrangement affect runtime in the way that if you partition at either the largest or smallest value 
 of a subarray you will always get one element in its final resting place but since the function will be done with since the
