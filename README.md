@@ -39,6 +39,7 @@ n: Array Size Runtime: Time in nanoseconds
 * n: 1000 Runtime: 52109
 * n: 10000 Runtime: 205529
 * n: 100000 Runtime: 1551052
+
 #### Average Case:
 * n: 5 Runtime: 299
 * n: 100 Runtime: 3793
