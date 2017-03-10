@@ -82,6 +82,14 @@ public class QuickSort
 	    qsortH(d,pivotPos+1,right);
 	}
     }
+
+    public static void worstqsortH(int[]d,int left, int right){
+	if(left < right){
+	    int pivotPos = partition(d,left,right,left);
+	    qsortH(d,left,pivotPos);
+	    qsortH(d,pivotPos+1,right);
+	}
+    }
 	
     public static int partition(int[] arr, int a, int b, int c){
         int v = arr[c];
@@ -114,6 +122,11 @@ public class QuickSort
     { 
 	qsortH(d,0,d.length-1);
 	
+    }
+
+    public static void worstqsort( int[] d )
+    {
+	worstqsortH(d,0,d.length-1);
     }
 
     // Thinkers are encouraged to roll their own subroutines.
