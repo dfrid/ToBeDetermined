@@ -41,11 +41,24 @@ public class QuickSortTester{
 	totalTime = 0;
 	for(int i = 0; i < 20;i++){
 	    long startTime = System.nanoTime();
-	    QuickSort.qsort(arr2);
+	    QuickSort.qsort(arr3);
 	    long stopTime = System.nanoTime();
 	    totalTime += (stopTime - startTime);
 	}
 	System.out.println("Best case average time for 1000 elements");
+	System.out.println(totalTime/20);
+	int[] arr4 = new int[10000];
+	for(int i = 0;i < arr4.length;i++){
+	    arr4[i] = i+1;
+	}
+	totalTime = 0;
+	for(int i = 0; i < 20;i++){
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(arr4);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Best case average time for 10000 elements");
 	System.out.println(totalTime/20);
     }
 }
