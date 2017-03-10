@@ -78,7 +78,7 @@ public class QuickSort
     public static void qsortH(int[]d,int left, int right){
 	if(left < right){
 	    int pivotPos = partition(d,left,right,(left+right)/2);
-	    qsortH(d,left,pivotPos);
+	    qsortH(d,left,pivotPos-1);
 	    qsortH(d,pivotPos+1,right);
 	}
     }
@@ -86,7 +86,7 @@ public class QuickSort
     public static void worstqsortH(int[]d,int left, int right){
 	if(left < right){
 	    int pivotPos = partition(d,left,right,left);
-	    qsortH(d,left,pivotPos);
+	    qsortH(d,left,pivotPos-1);
 	    qsortH(d,pivotPos+1,right);
 	}
     }

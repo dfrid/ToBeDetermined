@@ -98,7 +98,7 @@ public class QuickSortTester{
 	    long stopTime = System.nanoTime();
 	    totalTime += (stopTime - startTime);
 	}
-	System.out.println("Best case average time for 1000 elements");
+	System.out.println("Worst case average time for 1000 elements");
 	System.out.println(totalTime/20);
 
 	int[] worstarr4 = new int[10000];
@@ -112,7 +112,7 @@ public class QuickSortTester{
 	    long stopTime = System.nanoTime();
 	    totalTime += (stopTime - startTime);
 	}
-	System.out.println("Best case average time for 10000 elements");
+	System.out.println("Worst case average time for 10000 elements");
 	System.out.println(totalTime/20);
 	//END TESTS FOR WORST CASE
 
