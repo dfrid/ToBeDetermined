@@ -63,7 +63,7 @@ public class QuickSortTester{
 
 	//TESTS FOR WORST CASE
 	int[] worstarr1 = {1,2,4,5};
-	long totalTime = 0;
+	 totalTime = 0;
 	for(int i = 0; i < 20;i++){
 	    long startTime = System.nanoTime();
 	    QuickSort.worstqsort(worstarr1);
