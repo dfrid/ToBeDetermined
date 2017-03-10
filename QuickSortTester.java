@@ -114,7 +114,69 @@ public class QuickSortTester{
 	}
 	System.out.println("Worst case average time for 10000 elements");
 	System.out.println(totalTime/20);
+	int[] worstarr5 = new int[100000];
+	for(int i = 0;i < worstarr5.length;i++){
+	    worstarr5[i] = i+1;
+	}
+	totalTime = 0;
+	for(int i = 0; i < 20;i++){
+	    long startTime = System.nanoTime();
+	    QuickSort.worstqsort(worstarr5);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Worst case average time for 100000 elements");
+	System.out.println(totalTime/20);
 	//END TESTS FOR WORST CASE
-
+	totalTime = 0;
+	for(int i = 0; i < 100;i++){
+	    int[] avArr = buildArray(5,5);
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(avArr);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Average time for random array of 5 elements");
+	System.out.println(totalTime/100);
+	totalTime = 0;
+	for(int i = 0; i < 100;i++){
+	    int[] avArr = buildArray(100,100);
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(avArr);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Average time for random array of 100 elements");
+	System.out.println(totalTime/100);
+	totalTime = 0;
+	for(int i = 0; i < 100;i++){
+	    int[] avArr = buildArray(1000,1000);
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(avArr);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Average time for random array of 1000 elements");
+	System.out.println(totalTime/100);
+	totalTime = 0;
+	for(int i = 0; i < 100;i++){
+	    int[] avArr = buildArray(10000,10000);
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(avArr);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Average time for random array of 10000 elements");
+	System.out.println(totalTime/100);
+	totalTime = 0;
+	for(int i = 0; i < 100;i++){
+	    int[] avArr = buildArray(100000,100000);
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(avArr);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Average time for random array of 100000 elements");
+	System.out.println(totalTime/100);
     }
 }
