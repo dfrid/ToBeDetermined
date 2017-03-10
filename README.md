@@ -1,6 +1,6 @@
 # ToBeDetermined
+By: David Frid and Piotr Milewski
 
-### Time measurements and analysis of same
 Link to spreadsheet with our run times and corresponding graphs of observed vs expected runtime classifications
 https://docs.google.com/spreadsheets/d/1CFRATGu1H9gLVi9oKcBTx4DMIsFvsH1zkzdl7tpniOg/edit?usp=sharing
 
@@ -21,6 +21,11 @@ the runtime for that size arra.
 3. For average case we didnt modify the pivot position itself within the qsort algo but rather had random arrays generated of 
 the given size we wanted. We created a 100 arrays of the size we wanted and calculated the average runtime. We used the same 
 qsort algo(pivot pos as middle position).
+
+### Time measurements and analysis of same
+
+#### Worst Case:
+* n:   Runtime: 
 
 ### How pivot selection and data arrangement affect execution time
 Pivot Position and array arrangement affect runtime in the way that if you partition at either the largest or smallest value 
