@@ -11,6 +11,8 @@ public class QuickSortTester{
 	for(int x = 0;x < 10000;x++){
 	    QuickSort.qsort(arr0);
 	}
+	
+	//TESTS FOR BEST CASE
 	int[] arr1 = {1,2,4,5};
 	long totalTime = 0;
 	for(int i = 0; i < 20;i++){
@@ -60,7 +62,21 @@ public class QuickSortTester{
 	}
 	System.out.println("Best case average time for 10000 elements");
 	System.out.println(totalTime/20);
-
+	int[] arr5 = new int[100000];
+	for(int i = 0;i < arr5.length;i++){
+	    arr5[i] = i+1;
+	}
+	totalTime = 0;
+	for(int i = 0; i < 20;i++){
+	    long startTime = System.nanoTime();
+	    QuickSort.qsort(arr5);
+	    long stopTime = System.nanoTime();
+	    totalTime += (stopTime - startTime);
+	}
+	System.out.println("Best case average time for 100000 elements");
+	System.out.println(totalTime/20);
+	//END TESTS FOR BEST CASE
+	
 	//TESTS FOR WORST CASE
 	int[] worstarr1 = {1,2,4,5};
 	 totalTime = 0;
@@ -89,7 +105,7 @@ public class QuickSortTester{
 
 	int[] worstarr3 = new int[1000];
 	for(int i = 0;i < worstarr3.length;i++){
-	    worstarr3[i] = i+1;
+	    worstarr3[i] = 1000-i;
 	}
 	totalTime = 0;
 	for(int i = 0; i < 20;i++){
@@ -114,6 +130,7 @@ public class QuickSortTester{
 	}
 	System.out.println("Worst case average time for 10000 elements");
 	System.out.println(totalTime/20);
+	/*
 	int[] worstarr5 = new int[100000];
 	for(int i = 0;i < worstarr5.length;i++){
 	    worstarr5[i] = i+1;
@@ -127,7 +144,10 @@ public class QuickSortTester{
 	}
 	System.out.println("Worst case average time for 100000 elements");
 	System.out.println(totalTime/20);
+	*/
 	//END TESTS FOR WORST CASE
+
+	//TESTS FOR AVERAGE CASE
 	totalTime = 0;
 	for(int i = 0; i < 100;i++){
 	    int[] avArr = buildArray(5,5);
@@ -178,5 +198,7 @@ public class QuickSortTester{
 	}
 	System.out.println("Average time for random array of 100000 elements");
 	System.out.println(totalTime/100);
+	//END TESTS FOR AVERAGE CASE
+	
     }
 }
