@@ -1,4 +1,6 @@
 # ToBeDetermined
+Link to spreadsheet with our run times and corresponding graphs of observed vs expected runtime classifications
+https://docs.google.com/spreadsheets/d/1CFRATGu1H9gLVi9oKcBTx4DMIsFvsH1zkzdl7tpniOg/edit?usp=sharing
 
 ### Assessment of QuickSort’s Big-Oh runtime classification, abstracted to the algorithm level:
 1. Best case: nlogn
@@ -17,3 +19,9 @@ the runtime for that size arra.
 3. For average case we didnt modify the pivot position itself within the qsort algo but rather had random arrays generated of 
 the given size we wanted. We created a 100 arrays of the size we wanted and calculated the average runtime. We used the same 
 qsort algo(pivot pos as middle position).
+
+Pivot Position and array arrangement affect runtime in the way that if you partition at either the largest or smallest value 
+of a subarray you will always get one element in its final resting place but since the function will be done with since the
+left will equal the right. There will only be one subarray created that can call on the qsort function again meaning there
+only be one element put in its final resting place vs if you had two usbale subarrays you would have 2 elements in their final 
+resting place.
