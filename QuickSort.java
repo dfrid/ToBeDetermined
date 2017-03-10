@@ -6,7 +6,6 @@
 
 /*****************************************************
  * class QuickSort
- * (skeleton) <<delete this line if untrue>>
  * Implements quicksort algo to sort an array of ints in place
  *
  * 1. Summary of QuickSort algorithm:
