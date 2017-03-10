@@ -77,10 +77,30 @@ public class QuickSort
 
     public static void qsortH(int[]d,int left, int right){
 	if(left < right){
-	    int pivotPos = Mysterion.partition(d,left,right,(left+right)/2);
+	    int pivotPos = partition(d,left,right,(left+right)/2);
 	    qsortH(d,left,pivotPos);
 	    qsortH(d,pivotPos+1,right);
 	}
+    }
+	
+    public static int partition(int[] arr, int a, int b, int c){
+        int v = arr[c];
+        int temp = arr[c];
+        arr[c] = arr[b];
+        arr[b] = temp;
+        int s = a;
+        for (int i=a; i<b; i++){
+            if (arr[i]<v){
+                int temp2 = arr[s];
+                arr[s] = arr[i];
+                arr[i] = temp2;
+                s+=1;
+            }
+        }
+        int temp3 = arr[s];
+        arr[s] = arr[b];
+        arr[b] = temp3;
+        return s;
     }
     //--------------^  HELPER METHODS  ^--------------
 
