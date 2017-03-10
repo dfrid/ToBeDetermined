@@ -1,9 +1,9 @@
-/*
-David Frid
-APCS2 pd 5
-HW #15: So So Quick
-2017-03-08
-*/
+/*ToBeDetermined
+  Piotr Milewski, David Frid
+  APCS2 pd5
+  LAB#01 -- What Does the Data Say?
+  2017-03-10*/
+
 /*****************************************************
  * class QuickSort
  * (skeleton) <<delete this line if untrue>>

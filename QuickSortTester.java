@@ -1,3 +1,9 @@
+/*ToBeDetermined
+  Piotr Milewski, David Frid
+  APCS2 pd5
+  LAB#01 -- What Does the Data Say?
+  2017-03-10*/
+
 public class QuickSortTester{
     public static int[] buildArray( int s, int maxVal ) {
 	int[] retArr = new int[s];
