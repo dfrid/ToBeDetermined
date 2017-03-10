@@ -4,6 +4,15 @@
   LAB#01 -- What Does the Data Say?
   2017-03-10*/
 
+
+//QuickSortTester tests the runtimes of the best case, the worst case and the average case runtimes of the QuickSort algorithm
+
+//Best Case Runtime: nlogn
+//Worst Case Runtime: n^2
+//Average Case Runtime: nlogn
+
+//Runtime values are found in the readme link to a google spreadsheet
+
 public class QuickSortTester{
     public static int[] buildArray( int s, int maxVal ) {
 	int[] retArr = new int[s];
