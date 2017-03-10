@@ -46,6 +46,7 @@ n: Array Size Runtime: Time in nanoseconds
 * n: 1000 Runtime: 49389
 * n: 10000 Runtime: 624368
 * n: 100000 Runtime: 7667454
+
 ### How pivot selection and data arrangement affect execution time
 Pivot Position and array arrangement affect runtime in the way that if you partition at either the largest or smallest value 
 of a subarray you will always get one element in its final resting place but since the function will be done with since the
