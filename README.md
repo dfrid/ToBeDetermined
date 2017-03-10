@@ -24,7 +24,7 @@ qsort algo(pivot pos as middle position).
 
 ### Time measurements and analysis of same
 
-n: Array Size Runtime: Time in nanoseconds
+n: Array Size        Runtime: Time in nanoseconds
 
 #### Worst Case:
 * n: 5 Runtime: 
